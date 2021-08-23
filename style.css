@@ -1,0 +1,1367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+button {
+    margin: auto;
+}
+
+.tombol {
+    display: grid;
+}
+
+.button {
+    margin-top: 1%;
+    background-color: #fff;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 4px solid #4CAF50;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    /* White */
+    color: #000;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Tulisan Button*/
+.button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition-duration: 0.4s;
+
+}
+
+.button a:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner .banner-wrapper .banner-bg {
+    background: url(background.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+}
+
+
+.caption h1 {
+    color: #000;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.caption p {
+    padding-top: -2%;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.caption h2 {
+    padding-top: -2%;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+.logo-milad {
+    position: relative;
+    width: 194.5px;
+    background-position: center;
+    margin: 1% auto;
+    display: grid;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: #e6e6e6ff;
+    padding: 50px;
+}
+
+.wrapper h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container1,
+.container2 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container1 {
+    margin-top: 50px;
+}
+
+.container2 {
+    margin-top: 100px;
+}
+
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* The circles on the timeline */
+.container2::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.line {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin: auto;
+}
+
+.line-left {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin-left: 100px;
+}
+
+.line-left-lomba {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin-top: 2%;
+    margin-left: 100px;
+}
+
+
+header {
+    background: #35845d;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    margin: 15px 0 0 0;
+    height: 81px;
+}
+
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-toggle:focus~.nav-toggle-label {
+    outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: #35845d;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* .navbar */
+
+
+/* Bio */
+.jargon {
+    text-align: center;
+    padding: 8%;
+}
+
+.jargon h5 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.jargon h5 span {
+    font-weight: bold;
+}
+
+.section {
+    background-color: white;
+    height: 100%;
+    padding: auto 10px;
+}
+
+.lomba {
+    padding: 1% 8%;
+}
+
+.lomba h5 {
+    font-size: 25px;
+}
+
+.lomba p {
+    font-size: 16px;
+}
+
+.lomba ul li {
+    margin-left: 17px;
+}
+
+.bio {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 8%;
+}
+
+.bio h5 {
+    font-size: 25px;
+}
+
+.bio p {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+    width: 85%;
+    color: #000;
+}
+
+.divisi ul li {
+    margin-left: 2.4%;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+}
+
+/* //Bio */
+
+/* Content */
+.container
+{
+    background-color: #e6e6e6ff;
+    width: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.section-container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-container .columns {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.section-container .columns.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-container .columns.content .content-container {
+    padding: 40px 50px;
+}
+
+.section-container .columns.content .content-container h5 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.section-container .columns.content .content-container p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*  /Content */
+
+
+/* Daftar */
+.daftar ol li {
+    margin-left: 1.5%;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+}
+
+.daftar ol li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.daftar h3 {
+    margin: 5% 0 0 0;
+}
+
+.daftar .biaya {
+    margin-bottom: 10%;
+}
+
+#bio-media {
+    display: flex;
+    margin-left: 8%;
+}
+
+#peta {
+    margin-left: 8%;
+}
+
+/* /Daftar */
+
+/*Footer*/
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding-top: 70px;
+}
+
+.footer-col {
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col p {
+    color: #bbbbbb;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #35845d;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+    padding: auto auto;
+    text-align: center;
+    margin-top: 170px;
+    width: 100%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Style all font awesome icons */
+/*.fab {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5%;
+    color: black;
+}*/
+
+/* Add a hover effect if you want */
+
+
+/*Footer*/
+
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+/* Bener*/
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        /* this causes issues with Edge, since it's unsupported */
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        /* end Edge support stuff */
+
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        margin-top: 20px;
+    }
+
+    .section-container {
+        flex-flow: row wrap;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 8%;
+    }
+
+    #bio-media {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+
+    #peta {
+        width: 300px;
+    }
+
+    .section-container .columns.image {
+        display: block;
+        order: 1;
+        width: 100%;
+        height: 250px;
+    }
+
+    .jargon {
+        padding: 8% 7%;
+    }
+
+    .navbar ul li a,
+    .navbar ul li {
+        color: #fff;
+    }
+
+    .section-container .columns.content {
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+
+    .section-container .columns.content .content-container {
+        padding: 20px 35px;
+    }
+
+    .section-container .columns.content .content-container h5 {
+        margin-bottom: 5px;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container1, .container2 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .container2 {
+        margin-top: 30px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before,
+    .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 75px;
+    }
+
+    header .logo {
+        margin: 12px 0;
+        height: 50px;
+    }
+
+    .logo-milad {
+        height: 100px;
+        width: auto;
+    }
+
+    .banner {
+        height: 500px;
+        width: 480px;
+    }
+
+    .banner .banner-wrapper {
+        height: 770px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button a {
+        font-size: 1.2rem;
+    }
+
+    .caption {
+        padding-top: 40px;
+    }
+
+    .caption h1 {
+        font-size: 20px;
+    }
+
+    .jargon h5 {
+        font-size: 26px;
+        padding: 8% 0;
+    }
+
+    .container {
+        width: 480px;
+    }
+
+    .section-container .columns.content {
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+
+    .section-container .columns.content .content-container {
+        padding: 20px 0px;
+    }
+
+    .section-container .columns.content .content-container h5 {
+        margin-bottom: 5px;
+    }
+
+    .bio p {
+        font-size: 16px;
+        width: 400px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .line-left {
+        margin-left: 8%;
+    }
+
+    .line-left-lomba {
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+
+    .lomba ul li {
+        margin-left: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-col p {
+        width: 350px;
+        font-family: 'Poppins';
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        width: 480px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    header {
+        height: 75px;
+    }
+
+    header .logo {
+        margin: 12px 0;
+        height: 50px;
+    }
+
+    .banner {
+        width: 412px;
+    }
+
+    .caption h1 {
+        font-size: 24px;
+    }
+    .caption h2,
+    .caption p {
+        letter-spacing: 0px;
+        padding: 0 10px;
+    }
+
+    .caption h2 {
+        font-size: 20px;
+    }
+    
+    .caption p {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 412px;
+    }
+
+    .line {
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+
+    .jargon h5 {
+        font-size: 20px;
+        width: 340px;
+    }
+
+    .bio p {
+        width: 350px;
+    }
+
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 412px;
+    }
+
+    #peta {
+        margin-left: 0;
+        width: 412px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .footer-bottom {
+        width: 412px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 75px;
+    }
+
+    header .logo {
+        margin: 12px 0;
+        height: 50px;
+    }
+
+    .line {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .jargon h5 {
+        font-size: 20px;
+        margin-left: -10px;
+        width: 340px;
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 376px;
+    }
+
+    #peta {
+        margin-left: 0;
+        width: 376px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .banner {
+        height: 650px;
+        width: auto;
+    }
+
+    .bio {
+        width: 300px;
+        padding: 2% 0;
+        margin-left: 20px;
+    }
+
+    .bio h5 {
+        font-size: 24px;
+    }
+
+    .bio p {
+        font-size: 16px;
+        width: 300px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 20px;
+    }
+
+    .banner .banner-wrapper .banner-bg {
+        margin-top: -10%;
+        height: 770px;
+    }
+
+    .banner .caption {
+        margin-top: 10%;
+        padding-top: 15%;
+    }
+
+    .banner .caption h1 {
+        font-size: 20px;
+        padding: 20px 28.8px;
+        margin-top: 45px;
+    }
+
+    .banner .caption h2 {
+        font-size: 22px;
+    }
+
+    .banner .caption p {
+        padding: 0px 40px;
+        font-size: 14px;
+    }
+
+    .lomba {
+        padding: 20px;
+    }
+
+    .lomba {
+        font-size: 24px;
+    }
+
+    .lomba p,
+    .lomba ul li {
+        font-size: 16px;
+    }
+
+    .lomba p {
+        width: 360px;
+    }
+
+
+    .section-container {
+        width: 360px;
+    }
+
+    .section-container .columns.content {
+        display: block;
+        order: 2;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .section-container .columns.content .content-container {
+        padding: 20px 0px;
+    }
+
+    .section-container .columns.content .content-container h5 {
+        margin-bottom: 5px;
+    }
+
+    .section-container .columns.content .content-container p {
+        width: 330px;
+    }
+
+    .section-container .columns.content .content-container {
+        margin: 0;
+    }
+
+    .button {
+        margin: 5% 28%;
+        padding: 15px 32px;
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        height: 20px;
+        width: 376px;
+    }
+    
+    .container1 h2,
+    .container2 h2 {
+        font-size: 18px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        height: 75px;
+    }
+
+    header .logo {
+        margin: 12px 0;
+        height: 50px;
+    }
+
+    .line {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    .jargon {
+        padding: 0 10%;
+    }
+    .jargon h5 {
+        font-size: 20px;
+        margin: 0 0;
+        width: 300px;
+    }
+
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 376px;
+    }
+
+    #peta {
+        margin-left: 0;
+        width: 376px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .banner {
+        height: 650px;
+        width: auto;
+    }
+
+    .bio {
+        width: 300px;
+        padding: 2% 0;
+        margin-left: 20px;
+    }
+
+    .bio h5 {
+        font-size: 24px;
+    }
+
+    .bio p {
+        font-size: 14px;
+        width: 320px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 20px;
+    }
+
+    .banner .banner-wrapper .banner-bg {
+        margin-top: -10%;
+        height: 770px;
+    }
+
+    .banner .caption {
+        margin-top: 10%;
+        padding-top: 15%;
+    }
+
+    .banner .caption h1 {
+        font-size: 20px;
+        padding: 20px 28.8px;
+        margin-top: 45px;
+    }
+
+    .banner .caption h2 {
+        font-size: 22px;
+    }
+
+    .banner .caption p {
+        padding: 0px 20px;
+        font-size: 14px;
+    }
+
+    .lomba {
+        padding: 20px;
+    }
+
+    .lomba {
+        font-size: 24px;
+    }
+
+    .lomba p,
+    .lomba ul li {
+        font-size: 16px;
+    }
+
+    .lomba p,
+    .lomba h5 {
+        width: 330px;
+    }
+
+    .section-container {
+        width: 360px;
+    }
+
+    .section-container .columns.content {
+        display: block;
+        order: 2;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .section-container .columns.content .content-container {
+        padding: 20px 0px;
+    }
+
+    .section-container .columns.content .content-container h5 {
+        margin-bottom: 5px;
+    }
+
+    .section-container .columns.content .content-container p {
+        width: 330px;
+    }
+
+    .section-container .columns.content .content-container {
+        margin: 0;
+    }
+
+    .button {
+        margin: 5% 28%;
+        padding: 15px 32px;
+        font-size: 1rem;
+    }
+
+    .section-container .columns.image {
+        width: 300px;
+    }
+
+    .section-container .columns.content .content-container ul li {
+        width: 270px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        height: 20px;
+        width: 360px;
+    }
+
+    .timeline h2{
+        font-size: 20px;
+    }
+    /* Full-width containers */
+    .container1, .container2 {
+        width: 105%;
+        padding-left: 70px;
+        padding-right: 0px;
+    }
+    .container2 {
+        margin-top: 30px;
+    }
+
+    .container1 h2,
+    .container2 h2 {
+        font-size: 16px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before,
+    .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+}
