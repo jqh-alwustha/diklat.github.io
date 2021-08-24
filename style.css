@@ -900,7 +900,7 @@ img {
     }
 
     .banner .banner-wrapper .banner-bg {
-        height: 80vh;
+        height: 70vh;
     }
 
     .caption h1 {
@@ -960,11 +960,11 @@ img {
     }
 
     .container_card {
-        height: 90vh;
+        height: 80vh;
     }
 
     .container_card .card {
-        height: 80vh;
+        height: 70vh;
     }
 
     .card__content p {
