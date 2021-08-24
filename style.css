@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900.carddisplay=swap');
 
 * {
     margin: 0;
@@ -21,6 +21,119 @@ body {
 button {
     margin: auto;
 }
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
 
 .tombol {
     display: grid;
@@ -260,111 +373,134 @@ button {
     margin-left: 100px;
 }
 
-
-header {
-    background: #35845d;
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
+.card__image-container img {
+    max-width: 100%;
 }
 
-.logo {
-    margin: 15px 0 0 0;
-    height: 81px;
-}
-
-.nav-toggle {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-}
-
-.nav-toggle:focus~.nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
-}
-
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1em;
-    height: 100%;
+.container_card {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #444;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    display: block;
-    background: white;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
+.card {
     position: relative;
+    background: #333;
+    width: 400px;
+    height: 96vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2),
+        0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    content: '';
-    position: absolute;
+.card__image-container {
+    margin: -2rem -2rem 1rem -2rem;
 }
 
-.nav-toggle-label span::before {
-    bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-    top: 7px;
-}
-
-nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background: #35845d;
-    width: 100%;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+.card__line {
     opacity: 0;
-    transition: opacity 150ms ease-in-out;
+    animation: LineFadeIn .8s .8s forwards ease-in;
 }
 
-nav a:hover {
-    color: #000;
+.card__image {
+    opacity: 0;
+    animation: ImageFadeIn .8s 1.4s forwards;
 }
 
-.nav-toggle:checked~nav {
-    transform: scale(1, 1);
+.card__title {
+    color: white;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
 }
 
-.nav-toggle:checked~nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
+.card__content {
+    margin-top: -1rem;
+    opacity: 0;
+    animation: ContentFadeIn .8s 1.6s forwards;
 }
 
-/* .navbar */
+.card__content p {
+    font-size: 14px;
+}
+
+.card__svg {
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+@keyframes LineFadeIn {
+    0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+    }
+
+    50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #888BFF;
+    }
+
+    100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #545581;
+    }
+}
+
+.button_card {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #348F50 0%, #289749 100%);
+    border: none;
+    border-radius: 15px;
+}
+
+@keyframes ContentFadeIn {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ImageFadeIn {
+    0% {
+        transform: translate(-.5rem, -.5rem) scale(1.05);
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translateY(0) scale(1.0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
 
 
 /* Bio */
@@ -388,122 +524,42 @@ nav a:hover {
     padding: auto 10px;
 }
 
-.lomba {
-    padding: 1% 8%;
-}
-
-.lomba h5 {
-    font-size: 25px;
-}
-
-.lomba p {
-    font-size: 16px;
-}
-
-.lomba ul li {
-    margin-left: 17px;
-}
-
-.bio {
+.subsection {
     height: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-left: 8%;
 }
 
-.bio h5 {
+.subsection h5 {
     font-size: 25px;
 }
 
-.bio p {
+.subsection p {
     font-size: 16px;
     font-weight: 400;
     display: block;
     box-sizing: border-box;
-    width: 85%;
+    width: 90%;
     color: #000;
+    text-align: justify;
 }
 
-.divisi ul li {
-    margin-left: 2.4%;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000;
-    text-align: left;
+#notes {
+    margin-top: 20px;
 }
 
 /* //Bio */
 
 /* Content */
-.container
-{
+.container {
     background-color: #e6e6e6ff;
     width: 100%;
     margin-top: 10%;
     overflow: hidden;
 }
-.section-container {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.section-container .columns {
-    flex: 0 0 auto;
-    width: 50%;
-}
-
-.section-container .columns.image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.section-container .columns.content .content-container {
-    padding: 40px 50px;
-}
-
-.section-container .columns.content .content-container h5 {
-    font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.section-container .columns.content .content-container p {
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-bottom: 15px;
-    text-align: left;
-}
 
 /*  /Content */
-
-
-/* Daftar */
-.daftar ol li {
-    margin-left: 1.5%;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000;
-    text-align: left;
-}
-
-.daftar ol li a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.daftar h3 {
-    margin: 5% 0 0 0;
-}
-
-.daftar .biaya {
-    margin-bottom: 10%;
-}
 
 #bio-media {
     display: flex;
@@ -627,19 +683,6 @@ nav a:hover {
     position: absolute;
 }
 
-/* Style all font awesome icons */
-/*.fab {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 5%;
-    color: black;
-}*/
-
-/* Add a hover effect if you want */
-
-
 /*Footer*/
 
 @media (max-width: 1230px) {
@@ -662,76 +705,18 @@ nav a:hover {
 
 /* Bener*/
 @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-        display: none;
+    #peta {
+        width: 300px;
     }
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-
-    .logo {
-        grid-column: 2 / 3;
-    }
-
-    nav {
-        all: unset;
-        /* this causes issues with Edge, since it's unsupported */
-        position: relative;
-        text-align: left;
-        transition: none;
-        transform: scale(1, 1);
-        background: none;
-        top: initial;
-        left: initial;
-        /* end Edge support stuff */
-
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
-    nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-    }
-
-    nav a {
-        opacity: 1;
-        position: relative;
-    }
-
-    nav a::before {
-        content: '';
-        display: block;
-        height: 5px;
-        background: black;
-        position: absolute;
-        top: -.75em;
-        left: 0;
-        right: 0;
-        transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
-    }
-
-    nav a:hover::before {
-        transform: scale(1, 1);
+    #profile-yt {
+        width: 300px;
     }
 }
 
 @media screen and (max-width:767px) {
     .banner {
-        margin-top: 20px;
-    }
-
-    .section-container {
-        flex-flow: row wrap;
+        margin-top: 0px;
     }
 
     .line-left,
@@ -749,34 +734,12 @@ nav a:hover {
         width: 300px;
     }
 
-    .section-container .columns.image {
-        display: block;
-        order: 1;
-        width: 100%;
-        height: 250px;
+    #profile-yt {
+        width: 300px;
     }
 
     .jargon {
         padding: 8% 7%;
-    }
-
-    .navbar ul li a,
-    .navbar ul li {
-        color: #fff;
-    }
-
-    .section-container .columns.content {
-        display: block;
-        order: 2;
-        width: 100%;
-    }
-
-    .section-container .columns.content .content-container {
-        padding: 20px 35px;
-    }
-
-    .section-container .columns.content .content-container h5 {
-        margin-bottom: 5px;
     }
 
     .footer-col {
@@ -794,11 +757,13 @@ nav a:hover {
     }
 
     /* Full-width containers */
-    .container1, .container2 {
+    .container1,
+    .container2 {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+
     .container2 {
         margin-top: 30px;
     }
@@ -822,23 +787,25 @@ nav a:hover {
     .right {
         left: 0%;
     }
+
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #peta {
+        width: 600px;
+        margin-left: 0;
+    }
+
+    #profile-yt {
+        width: 600px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        height: 75px;
-    }
-
-    header .logo {
-        margin: 12px 0;
-        height: 50px;
-    }
-
-    .logo-milad {
-        height: 100px;
-        width: auto;
-    }
-
     .banner {
         height: 500px;
         width: 480px;
@@ -874,25 +841,23 @@ nav a:hover {
         padding: 8% 0;
     }
 
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #peta {
+        margin-left: 0;
+        width: 480px;
+    }
+
     .container {
         width: 480px;
     }
 
-    .section-container .columns.content {
-        display: block;
-        order: 2;
-        width: 100%;
-    }
-
-    .section-container .columns.content .content-container {
-        padding: 20px 0px;
-    }
-
-    .section-container .columns.content .content-container h5 {
-        margin-bottom: 5px;
-    }
-
-    .bio p {
+    .subsection p {
         font-size: 16px;
         width: 400px;
         margin-bottom: 10px;
@@ -918,7 +883,6 @@ nav a:hover {
 
     .footer-col p {
         width: 350px;
-        font-family: 'Poppins';
     }
 
     .footer-bottom {
@@ -930,32 +894,29 @@ nav a:hover {
 }
 
 @media screen and (max-width: 412px) {
-    header {
-        height: 75px;
-    }
-
-    header .logo {
-        margin: 12px 0;
-        height: 50px;
-    }
-
     .banner {
         width: 412px;
+        margin-top: 0;
+    }
+
+    .banner .banner-wrapper .banner-bg {
+        height: 100vh;
     }
 
     .caption h1 {
         font-size: 24px;
     }
+
     .caption h2,
     .caption p {
-        letter-spacing: 0px;
+        letter-spacing: 0;
         padding: 0 10px;
     }
 
     .caption h2 {
         font-size: 20px;
     }
-    
+
     .caption p {
         font-size: 14px;
     }
@@ -969,13 +930,12 @@ nav a:hover {
         margin-bottom: 0;
     }
 
-
     .jargon h5 {
         font-size: 20px;
         width: 340px;
     }
 
-    .bio p {
+    .subsection p {
         width: 350px;
     }
 
@@ -999,19 +959,37 @@ nav a:hover {
         margin-top: 100px;
     }
 
+    .container_card {
+        height: 124vh;
+    }
+
+    .container_card .card {
+        height: 118vh;
+    }
+
+    .card__content p {
+        font-size: 16px;
+    }
+
     .footer-bottom {
         width: 412px;
+    }
+
+    .container1 h2,
+    .container2 h2 {
+        font-size: 18px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    header {
-        height: 75px;
-    }
-
-    header .logo {
-        margin: 12px 0;
-        height: 50px;
+    .banner .banner-wrapper .banner-bg {
+        margin-top: -10%;
+        height: 540px;
     }
 
     .line {
@@ -1052,19 +1030,19 @@ nav a:hover {
         width: auto;
     }
 
-    .bio {
+    .subsection {
         width: 300px;
         padding: 2% 0;
         margin-left: 20px;
     }
 
-    .bio h5 {
+    .subsection h5 {
         font-size: 24px;
     }
 
-    .bio p {
+    .subsection p {
         font-size: 16px;
-        width: 300px;
+        width: 330px;
         margin-bottom: 10px;
         text-align: justify;
     }
@@ -1072,11 +1050,6 @@ nav a:hover {
     .line-left,
     .line-left-lomba {
         margin-left: 20px;
-    }
-
-    .banner .banner-wrapper .banner-bg {
-        margin-top: -10%;
-        height: 770px;
     }
 
     .banner .caption {
@@ -1099,49 +1072,18 @@ nav a:hover {
         font-size: 14px;
     }
 
-    .lomba {
-        padding: 20px;
-    }
-
-    .lomba {
-        font-size: 24px;
-    }
-
-    .lomba p,
-    .lomba ul li {
-        font-size: 16px;
-    }
-
-    .lomba p {
+    .card {
         width: 360px;
+        padding: 0 2rem;
+        height: 108vh;
     }
 
-
-    .section-container {
-        width: 360px;
+    .container_card {
+        height: 124vh;
     }
 
-    .section-container .columns.content {
-        display: block;
-        order: 2;
+    .card__content {
         width: 100%;
-        padding: 0 0;
-    }
-
-    .section-container .columns.content .content-container {
-        padding: 20px 0px;
-    }
-
-    .section-container .columns.content .content-container h5 {
-        margin-bottom: 5px;
-    }
-
-    .section-container .columns.content .content-container p {
-        width: 330px;
-    }
-
-    .section-container .columns.content .content-container {
-        margin: 0;
     }
 
     .button {
@@ -1155,7 +1097,12 @@ nav a:hover {
         height: 20px;
         width: 376px;
     }
-    
+
+    .wrapper {
+        padding: 20px 50px;
+        margin: 0 0 0 -35px;
+    }
+
     .container1 h2,
     .container2 h2 {
         font-size: 18px;
@@ -1168,15 +1115,6 @@ nav a:hover {
 }
 
 @media screen and (max-width: 360px) {
-    header {
-        height: 75px;
-    }
-
-    header .logo {
-        margin: 12px 0;
-        height: 50px;
-    }
-
     .line {
         text-align: center;
         margin-bottom: 0;
@@ -1189,6 +1127,7 @@ nav a:hover {
     .jargon {
         padding: 0 10%;
     }
+
     .jargon h5 {
         font-size: 20px;
         margin: 0 0;
@@ -1220,17 +1159,17 @@ nav a:hover {
         width: auto;
     }
 
-    .bio {
+    .subsection {
         width: 300px;
         padding: 2% 0;
         margin-left: 20px;
     }
 
-    .bio h5 {
+    .subsection h5 {
         font-size: 24px;
     }
 
-    .bio p {
+    .subsection p {
         font-size: 14px;
         width: 320px;
         margin-bottom: 10px;
@@ -1244,7 +1183,7 @@ nav a:hover {
 
     .banner .banner-wrapper .banner-bg {
         margin-top: -10%;
-        height: 770px;
+        height: 540px;
     }
 
     .banner .caption {
@@ -1267,63 +1206,22 @@ nav a:hover {
         font-size: 14px;
     }
 
-    .lomba {
-        padding: 20px;
-    }
-
-    .lomba {
-        font-size: 24px;
-    }
-
-    .lomba p,
-    .lomba ul li {
-        font-size: 16px;
-    }
-
-    .lomba p,
-    .lomba h5 {
-        width: 330px;
-    }
-
-    .section-container {
-        width: 360px;
-    }
-
-    .section-container .columns.content {
-        display: block;
-        order: 2;
-        width: 100%;
-        padding: 0 0;
-    }
-
-    .section-container .columns.content .content-container {
-        padding: 20px 0px;
-    }
-
-    .section-container .columns.content .content-container h5 {
-        margin-bottom: 5px;
-    }
-
-    .section-container .columns.content .content-container p {
-        width: 330px;
-    }
-
-    .section-container .columns.content .content-container {
-        margin: 0;
-    }
-
-    .button {
-        margin: 5% 28%;
-        padding: 15px 32px;
-        font-size: 1rem;
-    }
-
-    .section-container .columns.image {
+    .card {
         width: 300px;
+        padding: 0 2rem;
+        height: 108vh;
     }
 
-    .section-container .columns.content .content-container ul li {
-        width: 270px;
+    .container_card {
+        height: 124vh;
+    }
+
+    .container_card .card {
+        height: 118vh;
+    }
+
+    .card__content {
+        width: 100%;
     }
 
     .footer-bottom {
@@ -1332,15 +1230,18 @@ nav a:hover {
         width: 360px;
     }
 
-    .timeline h2{
+    .timeline h2 {
         font-size: 20px;
     }
+
     /* Full-width containers */
-    .container1, .container2 {
+    .container1,
+    .container2 {
         width: 105%;
         padding-left: 70px;
         padding-right: 0px;
     }
+
     .container2 {
         margin-top: 30px;
     }
@@ -1363,5 +1264,14 @@ nav a:hover {
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
-    
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
