@@ -381,7 +381,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 750px;
     background: #444;
 }
 
@@ -389,7 +389,7 @@ img {
     position: relative;
     background: #333;
     width: 400px;
-    height: 650px;
+    height: 700px;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
