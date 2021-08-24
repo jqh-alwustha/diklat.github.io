@@ -184,7 +184,7 @@ img {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    height: 85vh;
+    height: 447px;
 }
 
 
@@ -381,7 +381,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 700px;
     background: #444;
 }
 
@@ -389,7 +389,7 @@ img {
     position: relative;
     background: #333;
     width: 400px;
-    height: 80vh;
+    height: 650px;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
@@ -900,7 +900,7 @@ img {
     }
 
     .banner .banner-wrapper .banner-bg {
-        height: 80vh;
+        height: 447px;
     }
 
     .caption h1 {
@@ -959,14 +959,6 @@ img {
         margin-top: 100px;
     }
 
-    .container_card {
-        height: 90vh;
-    }
-
-    .container_card .card {
-        height: 80vh;
-    }
-
     .card__content p {
         font-size: 16px;
     }
@@ -989,7 +981,7 @@ img {
 @media screen and (max-width: 375px) {
     .banner .banner-wrapper .banner-bg {
         margin-top: -10%;
-        height: 540px;
+        height: 470px;
     }
 
     .line {
@@ -1075,11 +1067,6 @@ img {
     .card {
         width: 360px;
         padding: 0 2rem;
-        height: 90vh;
-    }
-
-    .container_card {
-        height: 80vh;
     }
 
     .card__content {
@@ -1206,14 +1193,9 @@ img {
         font-size: 14px;
     }
 
-    .container_card {
-        height: 90vh;
-    }
-
     .container_card .card {
         width: 300px;
         padding: 0 2rem;
-        height: 80vh;
     }
 
     .card__content {
