@@ -1,299 +1,1239 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="animate.css" rel="stylesheet">
-    <link rel="icon" href="https://jqhalwustha.files.wordpress.com/2021/08/logo-jqh-fix.png?w=80" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>JQH Al-Wustha</title>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900.carddisplay=swap');
 
-<body>
-    <!--Content-->
-    <section class="banner" id="home" style="width: 100%;">
-        <div class="banner-wrapper">
-            <div class="banner-bg">
-                <div class="caption">
-                    <h1 class="animated animatedFadeInUp fadeInUp">UKM JQH Al-Wustha<br>UIN Surakarta</h1>
-                    <img src="logo.png" class="logo-milad animated animatedFadeInUp fadeInUp" alt="Logo">
-                    <h2 class="animated animatedFadeInUp fadeInUp">Pendidikan dan Pelatihan X</h2>
-                    <p class="animated animatedFadeInUp fadeInUp">"Membentuk Spirit Kreativitas dalam Berseni Demi Melestarikan Budaya Islam dari JQH Untuk Nusantara"</p>
-                </div>
-                <div class="tombol">
-                    <button class="button animated animatedFadeInUp fadeInUp"><a href="https://jqhalwustha.wordpress.com" target=”_blank”rel="noopener noreferrer">KUNJUNGI</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-    <!--Bio-->
-    <div class="container" style="width: 100%;">
-        <div class="line"></div>
-        <div class="jargon">
-            <h5>Memberdayakan Umat melalui <span>Dzikir</span> dan <span>Sholawat</span></h5>
-        </div>
-        <div class="section" id="biografi">
-            <div class="line-left">
-            </div>
-            <div class="subsection">
-                <h5>Bio</h5>
-                <p>Kalian punya minat di bidang islami? Atau ingin berbagi ilmu dan mengembangkan bakat yang kalian
-                    miliki? Dan ingin bermanfaat di tengah masyarakat? <br><br>Menjadi mahasiswa di kampus Islam tidak
-                    lengkap jika tidak punya skill islami🤩<br><br>Yuk kami tahu caranya. Dengan bergabung dan berproses
-                    di UKM JQH Al-Wustha💚<br><br>JQH Al- Wustha merupakan salah satu Unit Kegiatan Mahasiswa (UKM) di
-                    UIN Raden Mas Said Surakarta yang mewadahi minat dan bakat teman-teman mahasiswa dalam bidang
-                    Al-Qur'an, keilmuan, kebudayaan dan kesenian islam demi mewujudkan generasi qur'ani yang religius,
-                    berakhlakul karimah serta melestarikan kearifan lokal.</p>
-                <br>
-                <p>UKM JQH Al-Wustha memiliki 5 Divisi peminatan, yakni:<br>
-                    📖 Divisi Tahfidz<br>
-                    🎙️ Divisi Tilawah<br>
-                    📝 Divisi Tafsir<br>
-                    🎼 Divisi Sholawat<br>
-                    🖋️ Divisi Kaligrafi<br>
-                    <br><br>
-                    Teman-teman nanti bisa memilih salah satu divisi sesuai minat masing-masing ya 🤗 <br><br>For Your
-                    Information. Tenang guys! Di UKM JQH tak ada seleksi masuknya loh. So, bagi kalian yang belum punya
-                    basic pun tetep bisa gabung & bakal diajarin dari nol. Dan yang udah punya basic boleh banget dong
-                    gabung sambil berbagi ilmu dan mengamalkannya agar lebih bermanfaat. 🤗
-                </p>
-            </div>
-        </div>
-        <!--/Bio-->
-        <div class="slideshow-container" style="margin-top: 20px;">
-            <h1 style="text-align: center;" id="cuplikan">Cuplikan</h1>
-            <div class="mySlides fade">
-                <img src="1.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="2.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="3.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="4.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="5.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="6.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="8.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="9.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="11.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="12.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="13.JPG" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="14.JPG" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-            <span class="dot" onclick="currentSlide(11)"></span>
-            <span class="dot" onclick="currentSlide(12)"></span>
-        </div>
-            <!--Container-Card-->
-        <div class="container_card" style="margin-top: 50px;">
-            <div class="card">
-                <!--Card-->
-                <div class="card__image-container">
-                    <img class="card__image" src="14.JPG" alt="Foto Graha">
-                </div>
-                <div class="card__content">
-                    <h1 class="card__title">Persyaratan</h1>
-                    <p>
-                        1️⃣ Follow <a href="https://www.instagram.com/jqh_alwustha/" style="color: #fff;"><i
-                                class="fab fa-instagram"></i></a> UKM JQH Al-Wustha + SS<br>
-                        2️⃣ Subscribe <a href="https://www.youtube.com/c/UKMJQHAlWustha/videos" style="color: #fff;"><i
-                                class="fab fa-youtube"></i></a> UKM JQH Al-Wustha + SS<br>
-                        3️⃣ Share minimal ke 2 grup kamu + SS<br>
-                        4️⃣ Mengisi Form<br>
-                        5️⃣ Membayar Registrasi 💸 Rp 15.000,- <br><br>TF Rek. BRI 6861-0101-6665-53-3<br> an. Al kahfi
-                        Zuhriyah
-                    </p>
-                    <button class="button"> <a href="https://bit.ly/DiklatXJQH"
-                            style="text-decoration: none;" target=”_blank”>DAFTAR</a></button>
-                </div>
-            </div>
-            <!--/Card-->
-        </div>
-        <!--/Container-Card-->
-        <div class="section" id="notes">
-            <div class="line-left">
-            </div>
-            <div class="subsection">
-                <h5>Catatan</h5>
-                <p>Jangan lupa konfirmasi, kirim SS dan bukti transfer ke CP berikut:</p>
-                <p style="text-align: left"> <a href="https://wa.me/+6281226075841" style="text-decoration:none">📞
-                        Niken </a><br>
-                    <a href="https://wa.me/+6288233751909" style="text-decoration:none">📞 Hanifah</a></p>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h1>Timeline</h1>
-            <!-- Left vertical line -->
-            <div class="timeline">
-                <div class="container1 left">
-                    <div class="content">
-                        <h2>22 Agustus</h2>
-                        <p>Pendaftaran dan Pembayaran</p>
-                    </div>
-                </div>
-                <div class="container2 right">
-                    <div class="content">
-                        <h2>2 September</h2>
-                        <p>Penutupan</p>
-                    </div>
-                </div>
-                <div class="container2 left">
-                    <div class="content">
-                        <h2>3 September</h2>
-                        <p>Screening</p>
-                    </div>
-                </div>
-                <div class="container2 right">
-                    <div class="content">
-                        <h2>8 September</h2>
-                        <p>Pembekalan</p>
-                    </div>
-                </div>
-                <div class="container2 left">
-                    <div class="content">
-                        <h2>10-12 September</h2>
-                        <p>Diklat X</p>
-                    </div>
-                </div>
-            </div> <!--/Timeline-->
-        </div> <!--/wrapper-->
-        <div class="section">
-            <div class="subsection">
-                <div id="bio-media">
-                    <iframe width="485" height="270" src="https://www.youtube.com/embed/z4BzEBesfHM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen target=”_blank” id="profile-yt" rel="noopener noreferrer"></iframe>
-                    <div class="maps-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.149523132975!2d110.73248121477675!3d-7.558670894548875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a14c215cc8bbd%3A0x27c268341f7725a!2sUniversitas%20Islam%20Negeri%20Raden%20Mas%20Said%20Surakarta!5e0!3m2!1sid!2sid!4v1627320239167!5m2!1sid!2sid"
-                            id="peta" width="485" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+body {
+    background: #fff;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+button {
+    margin: auto;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.tombol {
+    display: grid;
+}
+
+.button {
+    margin-top: 1%;
+    background-color: #fff;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 4px solid #4CAF50;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    /* White */
+    color: #000;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Tulisan Button*/
+.button a,
+.card .card__content .button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition-duration: 0.4s;
+
+}
+
+.button a:hover,
+.card .card__content .button a:hover  {
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner .banner-wrapper .banner-bg {
+    background: url(background.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 447px;
+}
 
 
+.caption h1 {
+    color: #000;
+    text-align: center;
+    padding-top: 10%;
+}
 
-    <!--// Content-->
+.caption p {
+    padding-top: -2%;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
 
-    <!--footer-->
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="row">
-                <div class="footer-col">
-                    <a href="https://jqhalwustha.wordpress.com" target=”_blank” rel="noopener noreferrer"
-                        class="logo-footer"><img src="logo-jqh.png" id="logo-jqh" style="width: 100px"
-                            alt="Logo JQH"></a>
-                    <h4>kontak</h4>
-                    <p><i class="fas fa-envelope"></i> Email<br>ukmjqhalwustha@gmail.com</p>
-                    <br>
-                    <p><i class="fas fa-building" style="color:#bbbbbb"></i> Alamat
-                        <br>
-                        Kantor Sekretariat UKM JQH Al-Wustha</p>
-                    <p>Jl. Pandawa, Pucangan, Kartasura, Sukoharjo, Gedung Student Center Lt.2</p>
+.caption h2 {
+    padding-top: -2%;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
 
-                </div>
-                <div class="footer-col">
-                    <h4>navigasi menu</h4>
-                    <ul>
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#biografi">bio</a></li>
-                        <li><a href="#cuplikan">Cuplikan</a></li>
-                        <li><a href="#notes">Catatan</a></li>
-                    </ul>
-                    <br>
-                </div>
-                <div class="footer-col">
-                    <h4>Ikuti kami</h4>
-                    <div class="social-links">
-                        <a href="https://web.facebook.com/jqhalwustha/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.twitter.com/jqh_alwustha"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/jqh_alwustha/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/c/UKMJQHAlWustha/videos"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="footer-bottom">
-            &copy; Tim Media 2021 | UKM JQH Al-Wustha UIN Surakarta
-        </div>
-    </footer>
+.logo-milad {
+    position: relative;
+    width: 194.5px;
+    background-position: center;
+    margin: 1% auto;
+    display: grid;
+}
 
-    <!-- // footer-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+.wrapper {
+    height: 100%;
+    background-color: #e6e6e6ff;
+    padding: 50px;
+}
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+.wrapper h1 {
+    margin-top: 40px;
+    text-align: center;
+}
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <script src="reveal.js"></script>
-</body>
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
 
-</html>
+/* Container around content */
+.container1,
+.container2 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container1 {
+    margin-top: 50px;
+}
+
+.container2 {
+    margin-top: 100px;
+}
+
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#cuplikan{
+    padding: 5% 0;
+}
+/* The circles on the timeline */
+.container2::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.line {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin: auto;
+}
+
+.line-left {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin-left: 100px;
+}
+
+.line-left-lomba {
+    background: -webkit-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: -o-linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    background: linear-gradient(#45b245ff 0%, #32c755ff 50%, #3cff00ff 100%);
+    width: 150px;
+    height: 5px;
+    margin-bottom: 10px !important;
+    margin-top: 2%;
+    margin-left: 100px;
+}
+
+.card__image-container img {
+    max-width: 100%;
+}
+
+.container_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    background: #444;
+}
+
+.card {
+    position: relative;
+    background: #333;
+    width: 400px;
+    height: 700px;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2),
+        0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card__image-container {
+    margin: -2rem -2rem 1rem -2rem;
+}
+
+.card__line {
+    opacity: 0;
+    animation: LineFadeIn .8s .8s forwards ease-in;
+}
+
+.card__image {
+    opacity: 0;
+    animation: ImageFadeIn .8s 1.4s forwards;
+}
+
+.card__title {
+    color: white;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.card__content {
+    margin-top: -1rem;
+    opacity: 0;
+    animation: ContentFadeIn .8s 1.6s forwards;
+}
+
+.card__content p {
+    font-size: 14px;
+}
+
+.card__svg {
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+@keyframes LineFadeIn {
+    0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+    }
+
+    50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #888BFF;
+    }
+
+    100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #545581;
+    }
+}
+
+.button_card {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #348F50 0%, #289749 100%);
+    border: none;
+    border-radius: 15px;
+}
+
+@keyframes ContentFadeIn {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ImageFadeIn {
+    0% {
+        transform: translate(-.5rem, -.5rem) scale(1.05);
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: translateY(0) scale(1.0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+
+/* Bio */
+.jargon {
+    text-align: center;
+    padding: 8%;
+}
+
+.jargon h5 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.jargon h5 span {
+    font-weight: bold;
+}
+
+.section {
+    background-color: white;
+    height: 100%;
+    padding: auto 10px;
+}
+
+.subsection {
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 8%;
+}
+
+.subsection h5 {
+    font-size: 25px;
+}
+
+.subsection p {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    color: #000;
+    text-align: justify;
+}
+
+#notes {
+    margin-top: 20px;
+}
+
+/* //Bio */
+
+/* Content */
+.container {
+    background-color: #e6e6e6ff;
+    width: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+/*  /Content */
+
+#bio-media {
+    display: flex;
+    margin-left: 8%;
+}
+
+#peta {
+    margin-left: 8%;
+}
+
+/* /Daftar */
+
+/*Footer*/
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding-top: 70px;
+}
+
+.footer-col {
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col p {
+    color: #bbbbbb;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #35845d;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+    padding: auto auto;
+    text-align: center;
+    margin-top: 170px;
+    width: 100%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*Footer*/
+
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+/* Bener*/
+@media screen and (min-width: 800px) {
+    #peta {
+        width: 300px;
+    }
+
+    #profile-yt {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        margin-top: 0px;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 8%;
+    }
+
+    #bio-media {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+
+    #peta {
+        width: 300px;
+    }
+
+    #profile-yt {
+        width: 300px;
+    }
+
+    .jargon {
+        padding: 8% 7%;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container1,
+    .container2 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container2 {
+        margin-top: 30px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before,
+    .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    #bio-media {
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #peta {
+        width: 600px;
+        margin-left: 0;
+    }
+
+    #profile-yt {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 500px;
+        width: 480px;
+    }
+
+    .banner .banner-wrapper {
+        height: 770px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button a {
+        font-size: 1.2rem;
+    }
+
+    .caption {
+        padding-top: 40px;
+    }
+
+    .caption h1 {
+        font-size: 20px;
+    }
+
+    .jargon h5 {
+        font-size: 26px;
+        padding: 8% 4%;
+    }
+
+    #bio-media {
+        margin-left: -9%;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #peta {
+        margin-left: -9%;
+        width: 480px;
+    }
+
+    .container {
+        width: 480px;
+    }
+
+    .subsection p {
+        font-size: 16px;
+        width: 400px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .line-left {
+        margin-left: 8%;
+    }
+
+    .line-left-lomba {
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+
+    .lomba ul li {
+        margin-left: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-col p {
+        width: 350px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        width: 480px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    .banner {
+        width: 412px;
+        margin-top: 0;
+    }
+
+    .banner .banner-wrapper .banner-bg {
+        height: 447px;
+    }
+
+    .caption h1 {
+        font-size: 24px;
+    }
+
+    .caption h2,
+    .caption p {
+        letter-spacing: 0;
+        padding: 0 10px;
+    }
+
+    .caption h2 {
+        font-size: 20px;
+    }
+
+    .caption p {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 412px;
+    }
+
+    .line {
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+    .jargon h5 {
+        font-size: 20px;
+        width: 340px;
+        padding: 0 20px;
+    }
+
+    .subsection p {
+        width: 350px;
+    }
+
+    #bio-media {
+        margin-left: -9%;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 412px;
+    }
+
+    #peta {
+        margin-left: -9%;
+        width: 412px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .card__content p {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        width: 412px;
+    }
+
+    .container1 h2,
+    .container2 h2 {
+        font-size: 18px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner .banner-wrapper .banner-bg {
+        margin-top: -10%;
+        height: 470px;
+    }
+
+    .line {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .jargon h5 {
+        font-size: 20px;
+        margin-left: -10px;
+        width: 340px;
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    #bio-media {
+        margin-left: -9%;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 376px;
+    }
+
+    #peta {
+        margin-left: -9%;
+        width: 376px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .banner {
+        height: 650px;
+        width: auto;
+    }
+
+    .subsection {
+        width: 300px;
+        padding: 2% 0;
+        margin-left: 20px;
+    }
+
+    .subsection h5 {
+        font-size: 24px;
+    }
+
+    .subsection p {
+        font-size: 16px;
+        width: 330px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 20px;
+    }
+
+    .banner .caption {
+        margin-top: 10%;
+        padding-top: 15%;
+    }
+
+    .banner .caption h1 {
+        font-size: 20px;
+        padding: 20px 28.8px;
+        margin-top: 45px;
+    }
+
+    .banner .caption h2 {
+        font-size: 22px;
+    }
+
+    .banner .caption p {
+        padding: 0px 40px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 360px;
+        padding: 0 2rem;
+    }
+
+    .card__content {
+        width: 100%;
+    }
+
+    .button {
+        margin: 5% 28%;
+        padding: 15px 32px;
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        height: 20px;
+        width: 376px;
+    }
+
+    .wrapper {
+        padding: 20px 50px;
+        margin: 0 0 0 -35px;
+    }
+
+    .container1 h2,
+    .container2 h2 {
+        font-size: 18px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .line {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    .jargon {
+        padding: 10% 4%;
+    }
+
+    .jargon h5 {
+        font-size: 20px;
+        margin: 0 0;
+        width: 330px;
+    }
+
+    #bio-media {
+        margin-left: -9%;
+        margin-top: 10px;
+        height: auto;
+        display: inline;
+    }
+
+    #profile-yt {
+        width: 376px;
+    }
+
+    #peta {
+        margin-left: -9%;
+        width: 376px;
+    }
+
+    #lomba {
+        margin-top: 100px;
+    }
+
+    .banner {
+        height: 650px;
+        width: auto;
+    }
+
+    .subsection {
+        width: 300px;
+        padding: 2% 0;
+        margin-left: 20px;
+    }
+
+    .subsection h5 {
+        font-size: 24px;
+    }
+
+    .subsection p {
+        font-size: 14px;
+        width: 320px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .line-left,
+    .line-left-lomba {
+        margin-left: 20px;
+    }
+
+    .banner .banner-wrapper .banner-bg {
+        margin-top: -10%;
+        height: 540px;
+    }
+
+    .banner .caption {
+        margin-top: 10%;
+        padding-top: 15%;
+    }
+
+    .banner .caption h1 {
+        font-size: 20px;
+        padding: 20px 28.8px;
+        margin-top: 45px;
+    }
+
+    .banner .caption h2 {
+        font-size: 22px;
+    }
+
+    .banner .caption p {
+        padding: 0px 20px;
+        font-size: 14px;
+    }
+
+    .container_card .card {
+        width: 300px;
+        padding: 0 2rem;
+    }
+
+    .card__content {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        height: 20px;
+        width: 360px;
+    }
+
+    .timeline h2 {
+        font-size: 20px;
+    }
+
+    /* Full-width containers */
+    .container1,
+    .container2 {
+        width: 105%;
+        padding-left: 70px;
+        padding-right: 0px;
+    }
+
+    .container2 {
+        margin-top: 30px;
+    }
+
+    .container1 h2,
+    .container2 h2 {
+        font-size: 16px;
+    }
+
+    .container1 p,
+    .container2 p {
+        font-size: 14px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before,
+    .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
