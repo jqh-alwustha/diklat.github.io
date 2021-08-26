@@ -913,6 +913,7 @@ img {
     .jargon h5 {
         font-size: 20px;
         width: 340px;
+        padding: 0 20px;
     }
 
     .subsection p {
