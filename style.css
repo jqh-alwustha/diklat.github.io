@@ -912,7 +912,8 @@ img {
 
     .jargon h5 {
         font-size: 20px;
-        width: 300px;
+        width: 340px;
+        padding: 0 20px;
     }
 
     .subsection p {
@@ -920,7 +921,7 @@ img {
     }
 
     #bio-media {
-        margin-left: 0;
+        margin-left: -9%;
         margin-top: 10px;
         height: auto;
         display: inline;
@@ -931,7 +932,7 @@ img {
     }
 
     #peta {
-        margin-left: 0;
+        margin-left: -9%;
         width: 412px;
     }
 
@@ -978,7 +979,7 @@ img {
     }
 
     #bio-media {
-        margin-left: 0;
+        margin-left: -9%;
         margin-top: 10px;
         height: auto;
         display: inline;
@@ -989,7 +990,7 @@ img {
     }
 
     #peta {
-        margin-left: 0;
+        margin-left: -9%;
         width: 376px;
     }
 
@@ -1102,7 +1103,7 @@ img {
     }
 
     #bio-media {
-        margin-left: 0;
+        margin-left: -9%;
         margin-top: 10px;
         height: auto;
         display: inline;
@@ -1113,7 +1114,7 @@ img {
     }
 
     #peta {
-        margin-left: 0;
+        margin-left: -9%;
         width: 376px;
     }
 
