@@ -822,14 +822,14 @@ img {
     }
 
     #bio-media {
-        margin-left: 0;
+        margin-left: -9%;
         margin-top: 10px;
         height: auto;
         display: inline;
     }
 
     #peta {
-        margin-left: 0;
+        margin-left: -9%;
         width: 480px;
     }
 
